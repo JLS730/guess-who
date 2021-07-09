@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+            crossorigin="anonymous"
+        >
+        <script src="./index.js" type="module" defer></script>
+        <title>Can You Guess Who?</title>
+    </head>
+    <body>
+        <div class="image-modal-background hidden">
+            <div class="image-modal">
+                <i class="fas fa-window-close fa-2x close-modal"></i>
+                <img src="./images/allcards.jpg" class="character-sheet" alt="">
+            </div>
+        </div>
+
+        <h1 class="title-text">Can You Guess Who?</h1>
+        
+        <div class="play-button-container">
+            <button class="play-button">Let's Play</button>
+        </div>
+        
+        <div class="info-answer-container">
+            <h2 class="info-answer"></h2>
+        </div>
+        
+        <div class="winning-card-container">
+            <div class="winning-card-border">
+                <div class="winning-card-inner-border">
+                    <h2 class="winning-card-logo">Guess Who?</h2>
+                    <input class="guess-card-input" type="text" placeholder="Enter Character Here...">
+                </div>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="selection-container">
+                <div class="selection-hat-container selection-containers">
+                    <input type="radio" id="hat" name="details" class="hat" value="hat">
+                    <label for="hat">Hat</label>
+                </div>
+                <div class="selection-hair-length-container selection-containers">
+                    <input type="radio" id="hair-length" name="details" class="hair-length" value="hair-length">
+                    <label for="hair-length">Hair Length</label>
+                </div>
+                <div class="selection-hair-color-container selection-containers">
+                    <input type="radio" id="hair-color" name="details" class="hair-color" value="hair-color">
+                    <label for="hair-color">Hair Color</label>
+                </div>
+                <div class="selection-eyebrows-container selection-containers">
+                    <input type="radio" id="eyebrows" name="details" class="eyebrows" value="eyebrows">
+                    <label for="eyebrows">Eyebrows</label>
+                </div>
+                <div class="selection-glasses-container selection-containers">
+                    <input type="radio" id="glasses" name="details" class="glasses" value="glasses">
+                    <label for="glasses">Glasses</label>
+                </div>
+                <div class="selection-eye-color-container selection-containers">
+                    <input type="radio" id="eye-color" name="details" class="eye-color" value="eye-color">
+                    <label for="eye-color">Eye Color</label>
+                </div>
+                <div class="selection-nose-container selection-containers">
+                    <input type="radio" id="nose" name="details" class="nose" value="nose">
+                    <label for="nose">Nose</label>
+                </div>
+                <div class="selection-cheeks-container selection-containers">
+                    <input type="radio" id="cheeks" name="details" class="cheeks" value="cheeks">
+                    <label for="cheeks">Cheeks</label>
+                </div>
+                <div class="selection-mustache-container selection-containers">
+                    <input type="radio" id="mustache" name="details" class="mustache" value="mustache">
+                    <label for="mustache">Mustache</label>
+                </div>
+                <div class="selection-beard-container selection-containers">
+                    <input type="radio" id="beard" name="details" class="beard" value="beard">
+                    <label for="beard">Beard</label>
+                </div>
+                <div class="selection-lips-container selection-containers">
+                    <input type="radio" id="lips" name="details" class="lips" value="lips">
+                    <label for="lips">Lips</label>
+                </div>
+                <div class="selection-facial-expression-container selection-containers">
+                    <input type="radio" id="facial-expression" name="details" class="facial-expression" value="facial-expression">
+                    <label for="facial-expression">Facial Expression</label>
+                </div>
+                
+                <button class="select-button">Select</button>
+            </div>
+            
+            <div class="text-input-container">
+                <div class="questions-container">
+                    <h2 class="hat-question question hidden">Does your character wear a hat?</h2>
+                    <h2 class="hair-length-question question hidden">Does your character have <input type="text" class="hair-length-input"> hair?</h2>
+                    <h2 class="hair-color-question question hidden">Does your character have <input type="text" class="hair-color-input"> colored hair?</h2>
+                    <h2 class="eyebrows-question question hidden">Does your character have <input type="text" class="eyebrows-input"> eyebrows?</h2>
+                    <h2 class="glasses-question question hidden">Does your character wear a glasses?</h2>
+                    <h2 class="eye-color-question question hidden">Does your character have <input type="text" class="eye-color-input"> eyes?</h2>
+                    <h2 class="nose-question question hidden">Does your character have a <input type="text" class="nose-input"> nose?</h2>
+                    <h2 class="cheeks-question question hidden">Does your character have <input type="text" class="cheeks-input"> cheeks?</h2>
+                    <h2 class="mustache-question question hidden">Does your character have a <input type="text" class="mustache-input"> mustache?</h2>
+                    <h2 class="beard-question question hidden">Does your character have a beard?</h2>
+                    <h2 class="lips-question question hidden">Does your character have <input type="text" class="lips-input"> lips?</h2>
+                    <h2 class="facial-expression-question question hidden">Is your character <input type="text" class="facial-expression-input">?</h2>
+                </div>
+                <button class="ask-question-button">Ask Question?</button>
+            </div>
+            
+            <div class="image-modal-container">
+                <h2 class="modal-text">Open Sharacter Sheet</h2>
+                <img src="./images/allcards.jpg" class="modal-image" alt="Character Sheet">
+            </div>
+        </div>
+    </body>
+</html>
