@@ -41,7 +41,6 @@ const clearInputs = () => {
     eyeColorInput.value = ''
     noseInput.value = ''
     cheeksInput.value = ''
-    mustacheInput.value = ''
     lipsInput.value = ''
     facialExpressionInput.value = ''
     guessCardInput.value = ''
@@ -181,7 +180,7 @@ askQuestionButton.addEventListener('click', () => {
             document.querySelector('.info-answer').textContent = 'NO'
         }
     } else if (!document.querySelector('.mustache-question').classList.contains('hidden')) {
-        if(mustacheInput.value.toLowerCase() == winningCardInfo.mustache) {
+        if(winningCardInfo.mustache == true) {
             document.querySelector('.info-answer').textContent = 'YES'
         } else {
             document.querySelector('.info-answer').textContent = 'NO'

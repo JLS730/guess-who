@@ -28,7 +28,7 @@ body {
             justify-content: space-between;
             align-items: center;
             width: 60%;
-            height: 85vh;
+            height: 91vh;
             background-color: lightgray;
 
                 .close-modal {
@@ -38,8 +38,8 @@ body {
                 }
 
                 .character-sheet {
-                    width: 850px;
-                    height: 700px;
+                    width: 1000px;
+                    height: 800px;
                     padding: 0 0 20px 0;
                 }
         }
@@ -53,7 +53,6 @@ body {
     text-align: center;
     font-family: sans-serif;
     font-size: 50px;
-    // padding: 2rem 0;
 }
 
 .play-button-container {
@@ -133,10 +132,9 @@ body {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 0 40px;
+            gap: 0 30px;
             height: 100%;
             width: 100%;
-            // background-color: indigo;
             border-right: 6px solid black;
 
                 label {
@@ -159,7 +157,6 @@ body {
             align-items: center;
             height: 100%;
             width: 100%;
-            // background-color: indianred;
             border-right: 6px solid black;
             
                 h2 {
@@ -193,7 +190,6 @@ body {
             align-items: center;
             height: 100%;
             width: 100%;
-            // background-color: hotpink;
 
                 h2 {
                     font-size: 25px;
